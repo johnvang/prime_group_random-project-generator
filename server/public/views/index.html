@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Group Project Randomizer</title>
+    <script src="/vendor/angular/angular.min.js" type="text/javascript"></script>
+    <script src="/assets/scripts/app.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div>
+</div>
+<div ng-controller="IndexController">
+    <button ng-click="getProject()">We need a project!</button>
+    <h1>{{project.companyName}}</h1>
+    <p>{{project.scrum}}</p>
+    <p>{{project.team}}</p>
+    <p>{{project.scrumPower}}</p>
+    <p>{{project.sprints}}</p>
+    <ul>
+        <li>Front End: {{project.scrum.front}}</li>
+        <li>Client Logistics: {{project.scrum.client}}</li>
+        <li>Server Logistics: {{project.scrum.server}}</li>
+    </ul>
+    <button ng-click="hire()">We need a team!</button>
+    <!--<p ng-show="cat.name">Your new cats name is: {{ cat.name }}</p>-->
+    <!--<p ng-hide="cat.name">Enter your new cat's name!</p>-->
+
+    <!--<form novalidate>-->
+        <!--Name: <input type="text" ng-model="cat.name" /><br />-->
+        <!--<input type="submit" ng-click="add(cat)" value="Save"/>-->
+    <!--</form>-->
+
+    <!--<h4>Cats</h4>-->
+    <!--<ul>-->
+        <!--<li ng-repeat="cat in cats">{{ cat.name }}</li>-->
+    <!--</ul>-->
+    <!--<div><button ng-click="testBtn()">Click Me</button> </div>-->
+    <!--<div>-->
+        <!--<img ng-src="{{gifId}}">-->
+    <!--</div>-->
+
+
+
+
+
+</div>
+
+</body>
+</html>
